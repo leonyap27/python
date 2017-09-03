@@ -28,45 +28,51 @@ with open("test_data.txt") as f:
 print("Total size: " + str(len(content)))
 f.close()
 
-strlist = list(content[50])
-print(strlist)
-#initResultList
-#updateSingleChar(strlist[i])
+#for allL in range(len(content)):
+#    strlist = list(content[allL])
+#    funcX(strlist)
+    #fullList = fullList + strlist
+    #print(strlist)
 
-for i in range(len(strlist)):
-    #print(strlist[i])
-    
-    if strlist[i] == 'Z':
-         myResultList[0] += 1;
-    if strlist[i] == 'W':
-         myResultList[1] += 1;
-    if strlist[i] == 'U':
-         myResultList[2] += 1;
-    if strlist[i] == 'X':
-         myResultList[3] += 1;
-    if strlist[i] == 'G':
-        myResultList[4] += 1;
-    if strlist[i] == 'H':
-        myResultList[5] += 1;
-    if strlist[i] == 'F':
-        myResultList[6] += 1;
-    if strlist[i] == 'V':
-        myResultList[7] += 1;
-    if strlist[i] == 'S':
-        myResultList[8] += 1;
-    if strlist[i] == 'R':
-        myResultList[9] += 1;
-    if strlist[i] == 'T':
-        myResultList[10] += 1;
-    if strlist[i] == 'O':
-        myResultList[11] += 1;
-    if strlist[i] == 'N':
-        myResultList[12] += 1;
-    if strlist[i] == 'I':
-        myResultList[13] += 1;
-    if strlist[i] == 'E':
-        myResultList[14] += 1;     
-    i += 1
+fullList = list(content[50])
+#print(strlist)
+
+
+#def funcX(fullList = [],*args): 
+for i in range(len(fullList)):
+        #print(strlist[i])
+        
+        if fullList[i] == 'Z':
+             myResultList[0] += 1;
+        if fullList[i] == 'W':
+             myResultList[1] += 1;
+        if fullList[i] == 'U':
+             myResultList[2] += 1;
+        if fullList[i] == 'X':
+             myResultList[3] += 1;
+        if fullList[i] == 'G':
+            myResultList[4] += 1;
+        if fullList[i] == 'H':
+            myResultList[5] += 1;
+        if fullList[i] == 'F':
+            myResultList[6] += 1;
+        if fullList[i] == 'V':
+            myResultList[7] += 1;
+        if fullList[i] == 'S':
+            myResultList[8] += 1;
+        if fullList[i] == 'R':
+            myResultList[9] += 1;
+        if fullList[i] == 'T':
+            myResultList[10] += 1;
+        if fullList[i] == 'O':
+            myResultList[11] += 1;
+        if fullList[i] == 'N':
+            myResultList[12] += 1;
+        if fullList[i] == 'I':
+            myResultList[13] += 1;
+        if fullList[i] == 'E':
+            myResultList[14] += 1;     
+        i += 1
 #print(myResultList)
 
 def getResult():
@@ -168,9 +174,12 @@ def getResult():
     print (result)
     #print (myResultList)
     
-print ("func call get result")
+print ("start func convert")
 getResult()
 print ('end')
+
+#refer to some test sample to the follwing link:
+# https://www.codementor.io/sheena/essential-python-interview-questions-du107ozr6
 
 def print_directory_contents(sPath):
     import os                                       
@@ -198,3 +207,13 @@ print(A3)
 print(A4)
 print(A5)
 print(A6)
+
+def f(x,l=[]):
+    for i in range(x):
+        l.append(i*i)
+    print(l) 
+
+f(2)
+f(3,[3,2,1])
+f(3)
+
